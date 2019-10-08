@@ -1,0 +1,8 @@
+instance:
+  app: auth-service
+  hostName: localhost
+  ipAddr: '127.0.0.1'
+  vipAddress: auth-service
+eureka:
+  host: localhost
+  port: 8456

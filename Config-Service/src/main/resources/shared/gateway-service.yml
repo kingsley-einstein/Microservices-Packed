@@ -1,0 +1,22 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8456/eureka
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false

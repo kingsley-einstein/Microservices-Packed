@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: https://localhost:8456/eureka
+  server:
+    wait-time-in-ms-when-sync-empty: 0

@@ -1,0 +1,9 @@
+
+server:
+  port: 8234
+spring:
+  application:
+    name: thread-service
+  cloud:
+    config:
+      uri: http://localhost:8888
